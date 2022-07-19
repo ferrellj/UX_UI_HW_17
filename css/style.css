@@ -1,0 +1,33 @@
+.topNavBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1%;
+}
+.icon{
+    cursor: pointer;
+    align-items: flex-start;
+    justify-content: center;
+    width: 9%;
+    background-color: lightblue;
+  }
+.pageTitle{
+    display: flex;
+    width: 78%;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+  }
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    width: 9%;
+    background-color: lightgreen;
+  }
+h1{
+    font-size: 36pt;
+    color: darkgray;
+
+}
