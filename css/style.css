@@ -9,14 +9,14 @@
     align-items: flex-start;
     justify-content: center;
     width: 9%;
-    background-color: lightblue;
+    background-color: #BBCDD9;
   }
 .pageTitle{
     display: flex;
     width: 78%;
     align-items: center;
     justify-content: center;
-    background-color: pink;
+    background-color:;
   }
 .logo{
     display: flex;
@@ -24,10 +24,34 @@
     align-items: center;
     padding: 1%;
     width: 9%;
-    background-color: lightgreen;
+    background-color:;
   }
 h1{
     font-size: 36pt;
-    color: darkgray;
-
+    color:#707070;
+    font-family: anisette-petite,sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
+.heroImg{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width:80%;
+  border-style: solid;
+  border-color:#8C8575;
+  border-width: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+.content{
+  height: 800px;
+  margin: 0 auto;
+  background-color: #EFEFED;
+  padding: 5%;
+}
+p{font-size: 14pt;
+  font-family: roboto,sans-serif;
+  font-weight: 400;
+  font-style: normal;}
+
+img{}
