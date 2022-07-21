@@ -1,23 +1,79 @@
-.topNavBar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 1%;
+.heading{
+  width: 100%;
+  height: 36pt;
+  padding: 0 10px;
+  background: #ffffff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.icon{
-    cursor: pointer;
-    align-items: flex-start;
-    justify-content: center;
-    width: 9%;
-    background-color: #BBCDD9;
-  }
-.pageTitle{
-    display: flex;
-    width: 78%;
-    align-items: center;
-    justify-content: center;
-    background-color:;
-  }
+.menu{
+  width: 20%;
+  height: 100vh;
+  padding-top: 80px;
+  list-style: none;
+  color:#454545;
+  background-color:#BBCDD9 ;
+  position: absolute;
+  left: -50%;
+  top: 0;
+  z-index: 2;
+  opacity: 0.5;
+  transition: 0.5s all linear;
+
+}
+
+.check:checked~ .menu{
+  left: 0;
+  opacity: 1;
+}
+.menu li{
+  padding: 10px;
+  font-size: 16pt;
+  font-family: anisette-petite,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.menu li:hover{
+  font-weight: bold;
+  cursor: pointer;
+}
+.check, .toggle-cross{
+width: 42px;
+height: 30px;
+position:absolute;
+left: 10px;
+}
+.check{
+  z-index: 4;
+  opacity: 0;
+  cursor: pointer;
+}
+.toggle-cross{
+  z-index: 3;
+}
+.line{
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  background: #454545;
+  transform-origin: center;
+  border-radius: 2.25px;
+}
+.ln1{
+  top: 0;
+}
+.ln2{
+  width: 80%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ln3{
+  top: 100%;
+  transform:translateY(-100%) ;
+}
+
 .logo{
     display: flex;
     justify-content: center;
@@ -28,7 +84,7 @@
   }
 h1{
     font-size: 36pt;
-    color:#707070;
+    color:#454545;
     font-family: anisette-petite,sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -56,5 +112,3 @@ p{font-size: 14pt;
   font-family: roboto,sans-serif;
   font-weight: 400;
   font-style: normal;}
-
-img{}
